@@ -1,0 +1,23 @@
+# General Election 2027 — website navigation
+
+> Election reference pages and an interactive fictional Nigeria budget game. Published information is sourced and time-dependent. Community poll responses are voluntary visitor data, not predictions or official results.
+
+## Primary pages
+- https://generalelection2027.com/ : Nigeria 2027 general election overview, candidate and party directories, verified election dates and opt-in community responses.
+- https://generalelection2027.com/election-2027 : Nigeria general election 2027 guide.
+- https://generalelection2027.com/election-2027/timetable : Current published INEC election dates.
+- https://generalelection2027.com/voter-guide : PVC, polling units, INEC registration links and BVAS overview.
+- https://generalelection2027.com/candidates : Reported nominated presidential candidates and running mates.
+- https://generalelection2027.com/parties : INEC registered Nigerian political parties.
+- https://generalelection2027.com/election-results : Official election results resources and terminology.
+- https://generalelection2027.com/games : Oga President, Fix Naija fictional simulator and voluntary website poll.
+- https://generalelection2027.com/advertise : Advertising, partnerships and Hicroft Technology contact.
+- https://generalelection2027.com/credits : Image sources and licenses.
+
+## Primary external sources
+- https://www.inecnigeria.org/elections/calendar/
+- https://www.inecnigeria.org/parties/
+- https://cvr.inecnigeria.org/Public/getStarted
+
+## Important data distinctions
+No official 2027 election outcome is claimed before INEC announces the result. Game results are fictitious; guest voting is nonrepresentative, self-selected opinion. Verify changes with INEC.

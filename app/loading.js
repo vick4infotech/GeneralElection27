@@ -1,0 +1,1 @@
+export default function Loading(){return <div className="site-loading" role="status" aria-live="polite"><div className="loading-emblem"><span>🇳🇬</span><div className="loading-ring"/></div><strong>GENERAL ELECTION 2027</strong><small>Getting things ready…</small></div>}

@@ -1,0 +1,16 @@
+import Link from 'next/link';
+import FixNaijaGame from '../../components/FixNaijaGame';
+import CommunityPoll from '../../components/CommunityPoll';
+import PollResults from '../../components/PollResults';
+import {getSummary} from '../../lib/db';
+export const dynamic='force-dynamic';
+export const metadata={title:'Oga President, Fix Naija! | Nigerian Simulation Game, Weekly Challenges & Leaderboards',description:'Become the fictional president for four years: 24 scenarios, national budget, animated Nigeria map, cabinet advisers, badges, optional Facebook cloud saves and weekly challenges.',alternates:{canonical:'/games'}};
+export default async function Games(){const summary=await getSummary();const facebookEnabled=Boolean(process.env.FACEBOOK_APP_ID&&process.env.FACEBOOK_APP_SECRET&&process.env.FACEBOOK_REDIRECT_URI);
+ return <>
+ <section className="game-cinematic-hero"><div className="shell"><div className="game-banner-top"><span>★ GENERAL ELECTION 2027 PRESENTS</span><span>PLAY ARENA / 001</span></div><div className="game-headline-big"><span className="game-hero-squiggle" aria-hidden="true">🇳🇬</span><h1>OGA PRESIDENT.<br/><em>FIX NAIJA!</em></h1><p>Twenty-four decisions. Four years. One fictional Nigeria. <strong>Wetin you go do?</strong></p><a className="game-cinematic-cta" href="#play-now">TAKE THE PRESIDENTIAL SEAT <span>↘</span></a></div><div className="game-feature-ribbon"><span>🎮 24 STORY MISSIONS</span><span>⚡ WEEKLY CHALLENGES</span><span>🏆 LEADERBOARDS</span><span>🔊 OPTIONAL SOUND</span><span>🔐 FACEBOOK SAVE</span></div></div></section>
+ <section className="shell guest-game-poll-teaser" aria-label="Current community poll top three"><div className="guest-game-poll-copy"><span className="section-eyebrow">COMMUNITY POLL · LIVE</span><h2>Top 3 candidate choices</h2><p>See who website visitors have selected. Anyone can play the games. Poll participation requires a six-digit email verification code.</p><a className="btn btn-primary" href="#community-poll">Choose a candidate ↗</a></div><div className="guest-game-poll-results"><PollResults summary={summary} compact/></div></section>
+ <div className="shell game-premium-wrap" id="play-now"><FixNaijaGame facebookEnabled={facebookEnabled}/></div>
+ <section className="game-poll-section" id="community-poll"><div className="shell section"><div className="game-poll-intro"><span className="section-eyebrow">YOUR VOICE, YOUR CHOICE</span><h2>2027 Community Poll</h2><p>Select a candidate in a separate, voluntary visitor poll. Unlike the games, the poll requires email verification before a response is submitted. No account or password is needed. Both games remain free to play as a guest. Game decisions and scores never affect poll responses.</p></div><CommunityPoll initialSummary={summary} facebookEnabled={facebookEnabled}/></div></section>
+ <section className="shell section"><div className="game-bottom-links"><div><span className="section-eyebrow">KEEP EXPLORING</span><h2>More from General Election 2027.</h2></div><div><Link className="btn btn-primary" href="/candidates">Explore candidates ↗</Link><Link className="btn btn-secondary" href="/parties">All political parties ↗</Link></div></div></section>
+ </>;
+}

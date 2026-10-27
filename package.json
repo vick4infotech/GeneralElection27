@@ -1,0 +1,20 @@
+{
+  "name": "general-election-2027",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0",
+    "photo:set": "node scripts/set-candidate-photo.mjs",
+    "photo:list": "node scripts/list-candidates.mjs"
+  },
+  "dependencies": {
+    "next": "^15.5.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "pg": "^8.13.1",
+    "bcryptjs": "^2.4.3",
+    "nodemailer": "^6.9.16"
+  }
+}
