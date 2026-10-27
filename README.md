@@ -1,3 +1,5 @@
+> **Dokploy failure fix (27 October 2026):** See [DOKPLOY-FIX.md](DOKPLOY-FIX.md). Original `/opengraph-image` prerender failure was replaced by a static PNG. Real credentials are shipped only as a separate private `.env` file.
+
 # Poll policy update — verified email only (27 October 2026)
 
 - **Both game modes** are still available to guests without registration. Guest scores and progress are retained.

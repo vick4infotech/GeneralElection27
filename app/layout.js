@@ -12,7 +12,7 @@ export const metadata={
  applicationName:'General Election 2027',
  icons:{icon:[{url:nigerianCoatIcon,type:'image/png'}],shortcut:[{url:nigerianCoatIcon,type:'image/png'}],apple:[{url:nigerianCoatIcon,type:'image/png'}]},
  robots:{index:true,follow:true,maxImagePreview:'large',maxSnippet:-1,maxVideoPreview:-1},
- openGraph:{siteName:'General Election 2027',type:'website',locale:'en_NG',images:[{url:'/opengraph-image',width:1200,height:630,alt:'Nigeria General Election 2027 information and games'}]},
+ openGraph:{siteName:'General Election 2027',type:'website',locale:'en_NG',images:[{url:'/opengraph-image.png',width:1200,height:630,alt:'Nigeria General Election 2027 information and games'}]},
  twitter:{card:'summary_large_image'},
  category:'news'
 };
